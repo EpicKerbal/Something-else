@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Automatically Click a Button Example</title>
+    <title>Automatically Open New Window Example</title>
   </head>
   <body>
-    <h1>Automatically Click a Button Example</h1>
+    <h1>Automatically Open New Window Example</h1>
     <button id="myButton">Click Me</button>
 
     <script>
       // Find the button element by ID
       const myButton = document.getElementById("myButton");
 
-      // Define the function to click the button and redirect to the URL
-      function clickAndRedirect() {
-        myButton.click(); // Simulate a click on the button
-        window.location.href = "https://epickerbal.github.io/script/"; // Redirect to the URL immediately
+      // Define the function to open a new window and redirect to the URL
+      function openNewWindow() {
+        window.open("https://epickerbal.github.io/script/", "_blank", "width=500,height=500"); // Open new window with specified dimensions
       }
 
-      // Call the function to click the button and redirect on page load
-      window.onload = clickAndRedirect;
+      // Call the function to open a new window and redirect on page load
+      window.onload = openNewWindow;
     </script>
   </body>
 </html>
