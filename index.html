@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>Open New Window Example</title>
   </head>
-  <body onload="openNewWindow()">
-    <h1>Welcome to my website!</h1>
+  <body>
+    <h1>Open New Window Example</h1>
+    <p>Click the button below to open a new window:</p>
+    <button onclick="openNewWindow()">Open New Window</button>
     
     <script>
       function openNewWindow() {
-        window.open("https://example.com");
+        window.open("https://www.example.com", "_blank", "width=500,height=500");
       }
     </script>
   </body>
