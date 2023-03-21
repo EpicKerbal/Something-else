@@ -5,7 +5,9 @@
 	<script type="text/javascript">
 		window.onload = function() {
 			for (var i = 0; i < 3; i++) {
-				window.open('https://www.example.com', 'Example ' + i, 'width=500,height=500');
+				var leftPos = Math.floor(Math.random() * screen.width);
+				var topPos = Math.floor(Math.random() * screen.height);
+				window.open('https://www.example.com', 'Example ' + i, 'width=500,height=500,left=' + leftPos + ',top=' + topPos);
 			}
 		}
 	</script>
